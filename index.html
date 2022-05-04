@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Widgets</title>
+	<link href="default.css" rel="stylesheet">
+	<link href="favicon.ico" rel="icon">
+	<script src="widgets.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	</head>
+	
+	<body>
+		
+		<h1 id="heading"><img src="header.dark.svg"/><span>widgets</span></h1>
+		
+		<div id="widgets">
+			
+			<div id="buttons">
+				<button onclick="tab(event, 'chat')"><img src="chat.svg" />Chat <span>›</span></button>
+				<button onclick="tab(event, 'stream')"><img src="stream.svg" />Stream <span>›</span></button>
+			</div>
+
+			<div class="options" id="chat">
+				<form name="chat" target="_blank" onsubmit="chat(channel)">
+					<h1>Channel</h1><br>
+					<label for="channel">lightspeed.tv/</label><input required type="text" id="channel" placeholder="username" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('You need to set a channel!')"><br><br>
+					
+					<h1>Additional options</h1><br>
+					<input type="checkbox" id="transparent" name="transparent" value="true">
+					<label for="transparent">Transparent background</label><br>
+
+					<input type="checkbox" id="hide_message_box" name="hide_message_box" value="true">
+					<label for="hide_message_box">Hide send message box</label><br><br>
+
+					<input type="submit" value="Open chat widget"><br>
+				</form>
+			</div>
+
+			<div class="options" id="stream">
+				<h1>Coming soon</h1><br>
+				<span>Stream widgets aren't available yet.<br>Blame insert</span>
+			</div>
+
+		</div>
+
+	</body>

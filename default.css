@@ -1,0 +1,128 @@
+@import url('https://rsms.me/inter/inter.css');
+* { font-family: 'Inter', sans-serif; box-sizing: border-box;}
+
+body {
+    background-color: #11131F;
+    color: #ffffff;
+    padding: 10vh 10vw;
+    margin: 0;
+}
+h1 {all: unset; margin: 0}
+
+#heading img { height: 42px; }
+
+#heading span {
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 8px;
+    letter-spacing: -1px;
+    padding-bottom: 2px
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    pointer-events: none;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 32px
+}
+
+#widgets {
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#buttons {
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    flex-grow: 1;
+    width: 68px;
+    background-color: #161826;
+}
+
+#buttons button {
+    border: none;
+    color: #ffffff;
+    text-align: left;
+    padding: 16px;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    background-color: #161826;
+}
+
+#buttons button.open {
+    background-color: #1D1F31;
+    border-radius: 16px 0 0 16px;
+}
+
+#buttons button img {
+    height: 32px;
+    margin-right: 16px;
+}
+
+#buttons button span {
+    flex-grow: 1;
+    text-align: right;
+    line-height: 0;
+    align-self: center;
+    padding-right: 8px;
+    padding-left: 32px;
+    font-weight: 100;
+    font-size: 48px;
+    padding-bottom: 6px;
+}
+
+.options {
+    padding: 16px;
+    background-color: #1D1F31;
+    width: 100%;
+    display: none
+}
+
+.options h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: #40DEF3;
+    outline: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #40DEF3;
+    height:20px;
+    width: 20px;
+    outline: none;
+    border: none;
+}
+
+input[type="submit"] {
+    border: none;
+    color: #ffffff;
+    background-color: #7445D9;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+label {
+    font-size: 20px;
+    user-select: none;
+}
