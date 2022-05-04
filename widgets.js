@@ -11,4 +11,4 @@ function tab(button, widget) {
     button.currentTarget.className = "open";
   }
 
-  function chat(channel){ document.chat.action = "https://next.lightspeed.tv/embed/"+channel.value+"/chat" }
+  function chat(channel){ document.chatform.action = "https://next.lightspeed.tv/embed/"+channel.value+"/chat" }

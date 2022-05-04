@@ -4,23 +4,8 @@
 	<title>Widgets</title>
 	<link href="default.css" rel="stylesheet">
 	<link href="favicon.ico" rel="icon">
-	<script>
-		function tab(button, widget) {
-		    var i, options, buttons;
-
-		    options = document.getElementsByClassName("options");
-		    for (i = 0; i < options.length; i++) { options[i].style.display = "none"; }
-
-		    buttons = document.getElementById("buttons").children;
-		    for (i = 0; i < buttons.length; i++) { buttons[i].className = ""; }
-
-		    document.getElementById(widget).style.display = "block";
-		    button.currentTarget.className = "open";
-		  }
-
-		  function chat(channel){ document.chat.action = "https://next.lightspeed.tv/embed/"+channel.value+"/chat" }
-	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="widgets.js"></script>
 	</head>
 	
 	<body>
@@ -35,7 +20,7 @@
 			</div>
 
 			<div class="options" id="chat">
-				<form name="chat" target="_blank" onsubmit="chat(channel)">
+				<form name="chatform" target="_blank" onsubmit="chat(channel)">
 					<h1>Channel</h1><br>
 					<label for="channel">lightspeed.tv/</label><input required type="text" id="channel" placeholder="username" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('You need to set a channel!')"><br><br>
 					
